@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .mybutton-primary{
+        @apply text-white text-xs px-8 py-3 bg-primary rounded-sm font-semibold active:scale-95 duration-200 active:bg-secondary active:text-primary
+    }
+    .mybutton-secondary{
+        @apply text-primary text-xs px-8 py-3 bg-secondary rounded-sm font-semibold active:scale-95 duration-200 active:bg-primary active:text-white
+    }
+    .navbar-link{
+        @apply py-2 hover:font-semibold hover:border-b-primary/20 hover:border-b-2 duration-200 box-content
+    }
+    .uppercard{
+        @apply p-8 border-black/15 rounded-sm h-fit md:h-[400px] flex flex-col justify-between border bg-transparent hover:bg-primary duration-200
+    }
+
+}
