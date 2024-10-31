@@ -27,5 +27,8 @@
     .h2text{
         @apply text-3xl text-sectext font-bold
     }
+    .footerlink{
+        @apply text-white/60 text-xs font-normal hover:text-white duration-500
+    }
 
 }

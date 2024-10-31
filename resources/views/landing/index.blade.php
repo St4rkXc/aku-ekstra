@@ -214,10 +214,10 @@
                     </div>
                 </div>
                 <div class="bg-base-200 collapse collapse-plus rounded-sm border border-black/10 ">
-                    <input type="radio" class="peer" name="my-accordion-1" checked />
+                    <input type="radio" class="peer" name="my-accordion-1"  />
                     <div class="collapse-title bg-base-100 peer-checked:bg-primary peer-checked:text-white text-primary flex items-center group space-x-2">
                         <div class="solar-question text-icon"></div>
-                        <p class="text-text textpeer font-semibold text-xs text-white">What is Gastix?</p>
+                        <p class="text-text textpeer font-semibold text-xs">What is Gastix?</p>
                     </div>
                     <div class="collapse-content bg-base-100 peer-checked:bg-primary peer-checked:text-white">
                         <p class=" text-xs font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim earum quia veniam officiis! Hic, omnis sequi repellat molestias asperiores quae illum temporibus odio impedit praesentium adipisci harum, aspernatur nam labore!</p>
@@ -244,7 +244,67 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+    <section id="cta">
+        <div class="container mx-auto py-[10px]">
+            <div class="w-full h-[500px] rounded-md flex flex-col justify-center items-center" style="background: url({{ asset('Images/CTA.png') }}) center center / cover no-repeat;"">
+                <p class="text-3xl font-bold text-white w-3/4 text-center">All-in-One Tool for Hassle-Free Extracurricular Oversight!</p>
+                <p class="subh1text text-base text-white mt-4">Say goodbye to paperwork and complex tracking. Everything you need for seamless management</p>
+                <div class="flex justify-center items-center gap-4">
+                    <a href="" class="mybutton-secondary bg-white mt-4">Get In Touch</a>
+                    <a href="" class="mybutton-secondary bg-white mt-4">See Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class=" w-screen px-4 flex justify-center items-center mt-32">
+        <div class="w-full bg-primary rounded-md">
+            <div class="container mx-auto pt-[100px] pb-[40px]">
+                <div class="flex justify-between ">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-3">
+                            <img src="{{ asset('Images/logo-white.png') }}" alt="" class="w-16 h-16">
+                            <p class="text-3xl text-white font-bold">Gastix</p>
+                        </div>
+                        <p class="text-base text-white font-normal mt-4">hello@gastixe.com</p>
+                        <p class="text-base text-white/60 font-light mt-2">+1 (277) 826-4511</p>
+                    </div>
+                    <div class="flex justify-between gap-12">
+                        <div class="flex flex-col">
+                            <p class="text-base text-white font-bold">Navigate</p>
+                            <li class="list-none mt-2 space-y-2 ">
+                                <ul><a href="" class="footerlink">Home</a></ul>
+                                <ul><a href="" class="footerlink">Demo</a></ul>
+                                <ul><a href="" class="footerlink">Company</a></ul>
+                                <ul><a href="" class="footerlink">Pricing</a></ul>
+                                <ul><a href="" class="footerlink">Profile</a></ul>
+                            </li>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-base text-white font-bold">System</p>
+                            <li class="list-none mt-2 space-y-2 ">
+                                <ul><a href="" class="footerlink">Dashboard</a></ul>
+                                <ul><a href="" class="footerlink">Poppers</a></ul>
+                                <ul><a href="" class="footerlink">Careers</a></ul>
+                                <ul><a href="" class="footerlink">Documentation</a></ul>
+                            </li>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-base text-white font-bold">Legal</p>
+                            <li class="list-none mt-2 space-y-2 ">
+                                <ul><a href="" class="footerlink">Terms of Services</a></ul>
+                                <ul><a href="" class="footerlink">Privacy Policy</a></ul>
+                                <ul><a href="" class="footerlink">Cookies Policy</a></ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-white/20 mt-20"></div>
+                <div class="flex justify-center items-center">
+                    <p class="text-xs text-white/60 mt-12">© 2022 ABC. All Rights Reserved. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 @endsection
