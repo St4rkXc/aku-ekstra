@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MyExtra</title>
+    <title>Gastix</title>
     @vite('resources/css/app.css')
     @vite('resources/css/iconify.css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ asset('Images/logo.png')}}">
     <style>
         html {
             scroll-behavior: smooth;

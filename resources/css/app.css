@@ -13,7 +13,19 @@
         @apply py-2 hover:font-semibold hover:border-b-primary/20 hover:border-b-2 duration-200 box-content
     }
     .uppercard{
-        @apply p-8 border-black/15 rounded-sm h-fit md:h-[400px] flex flex-col justify-between border bg-transparent hover:bg-primary duration-200
+        @apply p-8 border-black/15 rounded-lg h-fit md:h-[400px] flex flex-col justify-between border bg-transparent hover:bg-primary duration-200
+    }
+    .middlecard{
+        @apply p-8 border-black/15 rounded-lg h-fit md:h-[250px] flex flex-col justify-between border bg-transparent
+    }
+    .h1text{
+        @apply text-4xl text-sectext font-bold
+    }
+    .subh1text{
+        @apply font-normal text-xs text-sectext/80
+    }
+    .h2text{
+        @apply text-3xl text-sectext font-bold
     }
 
 }

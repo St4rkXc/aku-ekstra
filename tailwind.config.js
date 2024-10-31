@@ -34,7 +34,8 @@ export default {
                 "2xl": "32px",
                 "3xl": "48px",
                 "4xl": "64px",
-                "5xl": "96px"
+                "5xl": "96px",
+                "icon": "40px"
                 // "3xl": "128px",
                 // price: "40px",
                 // pricexl: "64px",

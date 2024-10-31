@@ -25,7 +25,7 @@
 			</div>
             <div class="navbar-center flex space-x-6">
                 <a class="hidden lg:block text-text font-semibold" href="/">Home</a>
-                <a class="hidden lg:block text-text navbar-link href="#about">Product</a>
+                <a class="hidden lg:block text-text navbar-link" href="#"">Product</a>
                 <a class="hidden lg:block text-text navbar-link" href="#gallery">Company</a>
                 <a class="hidden lg:block text-text navbar-link" href="#book">Features</a>
                 <a class="hidden lg:block text-text navbar-link" href="#book">Profile</a>
