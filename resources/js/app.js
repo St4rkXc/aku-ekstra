@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
 let swiperCards = new Swiper(".swiper", {
     loop: true,
     spaceBetween: 12,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -49,7 +49,7 @@ let swiperCards = new Swiper(".swiper", {
     },
 
     breakpoints: {
-        600: {
+        640: {
             slidesPerView: 2,
         },
         768: {
