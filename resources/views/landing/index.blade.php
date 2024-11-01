@@ -5,8 +5,7 @@
     <header class="w-screen h-screen pt-28 px-4">
         <div
             class="w-full h-full rounded-lg flex flex-col justify-center items-center space-y-4 mx-auto "style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('Images/Hero.png') }}) center center / cover no-repeat;">
-            <p class="text-5xl text-white font-bold w-full md:w-3/4 text-center mx-auto">Manage Extraculicular With Gastix
-            </p>
+            <p class="text-5xl text-white font-bold w-full md:w-3/4 text-center mx-auto">Manage Extraculicular With Gastix </p>
             <div class="flex space-x-3 mx-auto">
                 <a href="#" class="mybutton-primary ">Get Started</a>
                 <a href="#" class="mybutton-secondary bg-white ">Watch Demo</a>
@@ -191,8 +190,134 @@
             </div>
         </div>
     </section>
-    <section id="testi" class="py-[100px]">
 
+    <section id="testi" class="py-[100px]">
+        <div class="container mx-auto">
+            <div class="flex justify-between ">
+                <div class="w-1/2">
+                    <p class="h1text">What They Say About <span class="text-primary">Us?</span></p>
+                </div>
+                <div class="w-[40%] flex flex-col gap-4">
+                    <p class="subh1text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est corrupti quam iusto cupiditate illo aliquid fuga autem enim animi rerum.</p>
+                    <a href="" class="mybutton-secondary w-fit">See All Testimonials</a>
+
+                </div>
+            </div>
+            <div class="swiper mt-16">
+                <div class="swiper-wrapper pb-12">
+                    <div class="swiper-slide ">
+                        <div class="testicard gap-12">
+                            <img src="{{asset('Images/quote.png')}}" alt="" class="h-20 w-20">
+                            <div class="flex flex-col gap-6">
+                                <p class="italic font-medium text-text/80 text-xs">"Since we started using this platform, our team's efficiency has doubled. The automation features save us countless hours, and we can now focus on strategic initiatives rather than mundane tasks. Highly recommend!"</p>
+                                <div class="flex gap-4 items-center">
+                                    <div class=" w-12 h-12 rounded-full" style="background: url({{asset('Images/user1.jpg')}}) center center / cover no-repeat"></div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-text font-semibold ">Daniel Rahoel</p>
+                                        <div class="flex gap-1">
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- ? Card2 --}}
+                    <div class="swiper-slide h-full ">
+                        <div class="testicard gap-12">
+                            <img src="{{asset('Images/quote.png')}}" alt="" class="h-20 w-20">
+                            <div class="flex flex-col gap-6">
+                                <p class="italic font-medium text-text/80 text-xs">“This software has been a game-changer for our business. The accuracy of data processing has eliminated errors that used to cost us dearly. We’ve streamlined our operations and improved our bottom line!”</p>
+                                <div class="flex gap-4 items-center">
+                                    <div class=" w-12 h-12 rounded-full" style="background: url({{asset('Images/user2.jpg')}}) center center / cover no-repeat"></div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-text font-semibold ">Toesny Flex</p>
+                                        <div class="flex gap-1">
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- ? Card 3 --}}
+                    <div class="swiper-slide ">
+                        <div class="testicard gap-12">
+                            <img src="{{asset('Images/quote.png')}}" alt="" class="h-20 w-20">
+                            <div class="flex flex-col gap-6">
+                                <p class="italic font-medium text-text/80 text-xs">“I love how user-friendly the interface is. Onboarding was a breeze, and within days, we were already reaping the benefits of automated workflows. It's an invaluable tool for any growing team.”</p>
+                                <div class="flex gap-4 items-center">
+                                    <div class=" w-12 h-12 rounded-full" style="background: url({{asset('Images/user3.jpg')}}) center center / cover no-repeat"></div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-text font-semibold ">Rico Christ</p>
+                                        <div class="flex gap-1">
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- ? Card 4 --}}
+                    <div class="swiper-slide ">
+                        <div class="testicard gap-12">
+                            <img src="{{asset('Images/quote.png')}}" alt="" class="h-20 w-20">
+                            <div class="flex flex-col gap-6">
+                                <p class="italic font-medium text-text/80 text-xs">"As a finance manager, accurate data is crucial. This system processes everything flawlessly, allowing us to make informed decisions quickly. I can’t imagine going back to our old ways!"</p>
+                                <div class="flex gap-4 items-center">
+                                    <div class=" w-12 h-12 rounded-full" style="background: url({{asset('Images/user4.jpg')}}) center center / cover no-repeat"></div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-text font-semibold ">Mohard Monuica</p>
+                                        <div class="flex gap-1">
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- ? Card 5 --}}
+                    <div class="swiper-slide ">
+                        <div class="testicard gap-12">
+                            <img src="{{asset('Images/quote.png')}}" alt="" class="h-20 w-20">
+                            <div class="flex flex-col gap-6">
+                                <p class="italic font-medium text-text/80 text-xs">"What impressed me the most is the integration capabilities. Our existing tools work seamlessly with this platform, making it easy to transition without disrupting our workflow."</p>
+                                <div class="flex gap-4 items-center">
+                                    <div class=" w-12 h-12 rounded-full" style="background: url({{asset('Images/user5.jpg')}}) center center / cover no-repeat"></div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-text font-semibold ">Dione Stark</p>
+                                        <div class="flex gap-1">
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                            <div class="solar-star text-xs text-primary"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div> 
+        </div>
     </section>
 
     <section id="faq" class="py-[100px]">

@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{ asset('Images/logo.png')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="{{ asset('Images/logo.png') }}">
     <style>
         html {
             scroll-behavior: smooth;
             font-family: Manrope;
             overflow-x: hidden
-            
         }
     </style>
 </head>
