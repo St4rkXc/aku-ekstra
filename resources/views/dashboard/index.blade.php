@@ -36,7 +36,7 @@
                                     <p class="text-xs text-text/50 font-semibold">Unknown</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col 2xl:flex-row gap-3">
+                            <div class="flex flex-col md:flex-row gap-3">
                                 <button class="mybutton-secondary rounded-dmd">View Attendance</button>
                                 <button class="mybutton-primary rounded-dmd flex justify-center gap-2"><span class="ic-plus text-xl"></span>Add Attendance</button>
                             </div>
@@ -56,12 +56,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-7 p-8 bg-white rounded-sm ">
+                <div class="mt-7 p-8 bg-white rounded-sm max-h-[1000px] ">
                     <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-full md:w-96 py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name">
+                        <div class="flex gap-2 ">
+                            <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-full md:w-96 py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name">
+                            <button class="flex justify-center items-center mybutton-primary p-4 rounded-dmd"> <span class="solar-search text-base"></span> </button>
+                        </div>
                         <button class="mybutton-primary rounded-dmd flex justify-center items-center gap-3"onclick="student_add.showModal()"><span class="ic-plus text-base"></span> Add Student</button>
                     </div>
-                    <div class="overflow-x-scroll">
+                    <div class="overflow-x-scroll overflow-y-scroll max-h-[800px]">
                         <table class="mt-8 w-full">
                             <thead class="rounded-dmd">
                                 <tr class="bg-primary/10  text-left">
@@ -200,11 +203,11 @@
         <div class="modal-box">
             <h3 class="text-base font-bold text-center">Add Student</h3>
             <form action="" class="mt-4">
-                <input type="text" class="w-full modal-input" placeholder="Enter Student Name" required> {{-- Add Classroom input --}}
+                <input type="text" class="w-full modal-input" placeholder="Enter Student Name" required> {{-- Add Student input --}}
                 <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Classroom</button>
             </form>
             {{-- ? Modal Close button --}}
-            <form method="dialog mt-2">
+            <form method="dialog mt-2" >
                 <button class="mybutton-secondary rounded-[6px] w-full mt-2">Cancel</button>
             </form>
         </div>
