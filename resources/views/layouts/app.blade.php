@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body>
+<body class="duration-300">
     @yield('content')
 </body>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

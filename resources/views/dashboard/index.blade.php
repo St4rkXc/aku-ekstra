@@ -153,8 +153,7 @@
         {{-- ? Drawer --}}
         <div class="drawer-side">
             <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-            <div class="menu bg-base-100 min-h-full w-[350px] p-8">
-                <!-- Sidebar content here -->
+            <div class="menu bg-white min-h-full w-[350px] p-8">
                 <div class="flex gap-4 items-center">
                     <img src="{{ asset('Images/logo.png') }}" class="h-10 w-10" alt="">
                     <p class="text-text text-2xl font-bold">Gastix</p>
@@ -168,7 +167,7 @@
                                 class="solar-menudots text-base p-0 m-0"></span></div>
                         <ul tabindex="0"
                             class="dropdown-content menu bg-base-100 rounded-[8px] z-[1] w-60 p-4 shadow-lg space-y-2 ">
-                            <li><a class="p-4 justify-center text-text font-bold">Edit Classroom</a></li>
+                            <li><a class="p-4 justify-center text-text font-bold"onclick="classroom_edit.showModal()">Edit Classroom</a></li>
                             <li><a class="p-4 bg-primary text-white hover:bg-primary justify-center font-bold"
                                     onclick="classroom_add.showModal()""><span class="ic-plus text-base"></span>Add
                                     Classroom</a></li>
@@ -198,13 +197,27 @@
             </form>
         </div>
     </dialog>
-    {{-- * Modal Student Classroom --}}
+    {{-- * Modal Add Student Classroom --}}
     <dialog id="student_add" class="modal">
         <div class="modal-box">
             <h3 class="text-base font-bold text-center">Add Student</h3>
             <form action="" class="mt-4">
                 <input type="text" class="w-full modal-input" placeholder="Enter Student Name" required> {{-- Add Student input --}}
-                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Classroom</button>
+                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Student</button>
+            </form>
+            {{-- ? Modal Close button --}}
+            <form method="dialog mt-2" >
+                <button class="mybutton-secondary rounded-[6px] w-full mt-2">Cancel</button>
+            </form>
+        </div>
+    </dialog>
+    {{-- * Modal Student Classroom --}}
+    <dialog id="classroom_edit" class="modal">
+        <div class="modal-box">
+            <h3 class="text-base font-bold text-center">Edit Classroom Name</h3>
+            <form action="" class="mt-4">
+                <input type="text" class="w-full modal-input" placeholder="Enter New Classroom Name" required> {{-- Add Student input --}}
+                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Rename Classroom</button>
             </form>
             {{-- ? Modal Close button --}}
             <form method="dialog mt-2" >
@@ -288,5 +301,5 @@
         </script>
 @endsection
 
-{{-- ! Ini Button buat buka drawwernya --}}
+
 
