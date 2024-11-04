@@ -47,6 +47,8 @@ export default {
                 'lg': '32px',
                 'full': '9999px',
                 'large': '64px',
+                'dsm' : '6px',
+                'dmd' : '8px',
             },
             
         },
