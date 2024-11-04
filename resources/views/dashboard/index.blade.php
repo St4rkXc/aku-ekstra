@@ -5,7 +5,7 @@
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content bg-[#F3F3F3] ">
             {{-- ? Page Content --}}
-            <div class="w-full px-8 py-8"> {{-- ? Main Container --}}
+            <div class="w-full px-8 py-4"> {{-- ? Main Container --}}
                 <header class="w-full">
                     <div class="flex gap-4 items-center">
                         <label for="my-drawer-2" class="mybutton-primary drawer-button rounded-[6px] lg:hidden p-3 flex justify-center items-center"><span class="solar-widget text-white text-2xl"></span></label>
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </header>
-
+                {{-- * Uppersection --}}
                 <div class="flex gap-4 mt-6">
                     {{-- * Attendacne --}}
                     <div class="bg-white rounded-sm py-12 w-[35%] flex justify-center items-center">
@@ -25,15 +25,15 @@
                             <div class="flex justify-between items-center gap-12">
                                 <div class="flex flex-col items-center">
                                     <p class="text-3xl text-text font-bold">24</p>
-                                    <p class="text-base text-text/50 font-semibold">Present</p>
+                                    <p class="text-xs text-text/50 font-semibold">Present</p>
                                 </div>
                                 <div class="flex flex-col items-center">
                                     <p class="text-3xl text-text font-bold">24</p>
-                                    <p class="text-base text-text/50 font-semibold">Present</p>
+                                    <p class="text-xs text-text/50 font-semibold">Leave Req.</p>
                                 </div>
                                 <div class="flex flex-col items-center">
                                     <p class="text-3xl text-text font-bold">24</p>
-                                    <p class="text-base text-text/50 font-semibold">Present</p>
+                                    <p class="text-xs text-text/50 font-semibold">Unknown</p>
                                 </div>
                             </div>
                             <div class="flex gap-3">
@@ -46,7 +46,7 @@
                     <div class="bg-white rounded-sm p-8 w-[65%]">
                         <div class="flex justify-between">
                             <p class="text-primary text-xl font-bold">Attendance Frequency</p>
-                            <select id="timeframeSelect" class="select bg-transparent focus:outline-primary font-bold">
+                            <select id="timeframeSelect" class="select bg-transparent focus:outline-none focus:border-none font-bold">
                                 <option value="month" selected>This Month</option>
                                 <option value="week">This Week</option>
                             </select>
@@ -55,6 +55,94 @@
                             <canvas id="attendanceChart" class="h-[320px]"></canvas>
                         </div>
                     </div>
+                </div>
+                <div class="mt-7 p-8 bg-white rounded-sm">
+                    <div class="flex justify-between">
+                        <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-96 py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name">
+                        <button class="mybutton-primary rounded-dmd flex justify-center items-center gap-3"onclick="student_add.showModal()"><span class="ic-plus text-base"></span> Add Student</button>
+                    </div>
+                    <table class="mt-8 w-full">
+                        <thead class="rounded-dmd">
+                            <tr class="bg-primary/10  text-left">
+                                <th class="p-4 font-semibold text-gray-600">Number</th>
+                                <th class="p-4 font-semibold text-gray-600">Student Name</th>
+                                <th class="p-4 font-semibold text-gray-600">Date Joined</th>
+                                <th class="p-4 font-semibold text-gray-600">Points</th>
+                                <th class="p-4 font-semibold text-gray-600">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody> {{-- ? Tabel Data --}}
+
+                            <tr class="border-b">
+                                <td class="p-4 text-text">1</td>
+                                <td class="p-4 text-text">Alice Smith</td>
+                                <td class="p-4 text-text">2022-10-16</td>
+                                <td class="p-4 text-text">100</td>
+                                <td class="p-4 flex space-x-2">
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-eye text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-edit text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                        <div class="solar-delete text-xl"></div>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4 text-text">2</td>
+                                <td class="p-4 text-text">Dione Stark</td>
+                                <td class="p-4 text-text">2022-10-16</td>
+                                <td class="p-4 text-text">100</td>
+                                <td class="p-4 flex space-x-2">
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-eye text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-edit text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                        <div class="solar-delete text-xl"></div>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4 text-text">3</td>
+                                <td class="p-4 text-text">Ayam Kambing</td>
+                                <td class="p-4 text-text">2022-10-16</td>
+                                <td class="p-4 text-text">100</td>
+                                <td class="p-4 flex space-x-2">
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-eye text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-edit text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                        <div class="solar-delete text-xl"></div>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td class="p-4 text-text">4</td>
+                                <td class="p-4 text-text">Alice Smith</td>
+                                <td class="p-4 text-text">2022-10-16</td>
+                                <td class="p-4 text-text">100</td>
+                                <td class="p-4 flex space-x-2">
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-eye text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                        <div class="solar-edit text-xl"></div>
+                                    </button>
+                                    <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                        <div class="solar-delete text-xl"></div>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -83,7 +171,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="flex flex-col pl-2 space-y-2 w-full mt-6">
+                <div class="flex flex-col pl-1 space-y-2 w-full mt-6">
                     <a href="" class="sidebar-classroom hover:bg-primary/90">Robotics</a>
                     <a href="" class="sidebar-classroom bg-transparent hover:bg-gray-200 text-text">Web Development</a>
                     <a href="" class="sidebar-classroom bg-transparent hover:bg-gray-200 text-text">Animation</a>
@@ -98,6 +186,20 @@
             <h3 class="text-base font-bold text-center">Add Classroom</h3>
             <form action="" class="mt-4">
                 <input type="text" class="w-full modal-input" placeholder="Enter Classroom Name" required> {{-- Add Classroom input --}}
+                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Classroom</button>
+            </form>
+            {{-- ? Modal Close button --}}
+            <form method="dialog mt-2">
+                <button class="mybutton-secondary rounded-[6px] w-full mt-2">Cancel</button>
+            </form>
+        </div>
+    </dialog>
+    {{-- * Modal Student Classroom --}}
+    <dialog id="student_add" class="modal">
+        <div class="modal-box">
+            <h3 class="text-base font-bold text-center">Add Student</h3>
+            <form action="" class="mt-4">
+                <input type="text" class="w-full modal-input" placeholder="Enter Student Name" required> {{-- Add Classroom input --}}
                 <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Classroom</button>
             </form>
             {{-- ? Modal Close button --}}
@@ -124,7 +226,7 @@
                     labels: monthData.labels,
                     datasets: [
                         {
-                            label: "Bookings",
+                            label: "Attendance",
                             data: monthData.data,
                             borderColor: "rgba(42, 94, 220, 1)",
                             backgroundColor: "rgba(42, 94, 220, 0.2)",

@@ -34,7 +34,7 @@
         @apply p-6 border-black/15 rounded-lg h-fit sm:h-[460px]  md:h-[400px] flex flex-col justify-between border bg-transparent
     }
     .sidebar-classroom{
-        @apply py-4 px-8 bg-primary rounded-[8px] text-white font-bold duration-200 text-xs
+        @apply py-4 px-6 bg-primary rounded-[8px] text-white font-bold duration-200 text-xs
     }
     .modal-input{
         @apply py-3 px-4 rounded-[6px] border border-black/20 focus:outline-none bg-transparent text-text font-semibold
