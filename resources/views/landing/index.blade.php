@@ -317,7 +317,7 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div> 
-            <a href="" class="mybutton-secondary block w-fit mx-auto mt-12">See All Testimonials</a>
+            <a href="" class="mybutton-secondary block lg:hidden w-fit mx-auto mt-12">See All Testimonials</a>
             </div>
         </div>
     </section>

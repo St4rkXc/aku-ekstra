@@ -18,7 +18,7 @@
                 </header>
                 {{-- * Uppersection --}}
                 <div class="flex flex-col 2xl:flex-row gap-4 mt-6">
-                    {{-- * Attendacne --}}
+                    {{-- * Attendance --}}
                     <div class="bg-white rounded-sm py-12 px-4 w-full 2xl:w-[35%] flex justify-center items-center">
                         <div class="flex flex-col items-center gap-8">
                             <p class="text-primary text-xl font-bold">Today's Attendance</p>
@@ -299,7 +299,7 @@
                     <p class="text-text/80 font-black text-xs">Classroom</p>
                     <div class="dropdown dropdown-left ">
                         <div tabindex="0" role="button"
-                            class=" px-4 rounded-[4px] py-2 bg-gray-200 w-fit h-fit flex items-center justify-center"><span
+                            class=" px-4 rounded-[4px] py-2 bg-gray-200 w-fit h-fit flex items-center justify-center active:bg-primary active:text-white duration-200   "><span
                                 class="solar-menudots text-base p-0 m-0"></span></div>
                         <ul tabindex="0"
                             class="dropdown-content menu bg-base-100 rounded-[8px] z-[1] w-60 p-4 shadow-lg space-y-2 ">
