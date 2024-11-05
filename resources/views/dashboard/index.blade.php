@@ -192,7 +192,7 @@
                 <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Classroom</button>
             </form>
             {{-- ? Modal Close button --}}
-            <form method="dialog mt-2">
+            <form method="dialog">
                 <button class="mybutton-secondary rounded-[6px] w-full mt-2">Cancel</button>
             </form>
         </div>
@@ -206,7 +206,7 @@
                 <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Student</button>
             </form>
             {{-- ? Modal Close button --}}
-            <form method="dialog mt-2" >
+            <form method="dialog" >
                 <button class="mybutton-secondary rounded-[6px] w-full mt-2">Cancel</button>
             </form>
         </div>
@@ -220,7 +220,7 @@
                 <button class="mybutton-primary w-full mt-4 rounded-[6px]">Rename Classroom</button>
             </form>
             {{-- ? Modal Close button --}}
-            <form method="dialog mt-2" >
+            <form method="dialog" >
                 <button class="mybutton-secondary rounded-[6px] w-full mt-2">Cancel</button>
             </form>
         </div>
