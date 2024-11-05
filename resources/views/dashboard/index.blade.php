@@ -64,21 +64,157 @@
                         </div>
                         <button class="mybutton-primary rounded-dmd flex justify-center items-center gap-3"onclick="student_add.showModal()"><span class="ic-plus text-base"></span> Add Student</button>
                     </div>
-                    <div class="overflow-x-scroll overflow-y-scroll max-h-[800px]">
-                        <table class="mt-8 w-full">
-                            <thead class="rounded-dmd">
-                                <tr class="bg-primary/10  text-left">
-                                    <th class="p-4 font-semibold text-text">Number</th>
-                                    <th class="p-4 font-semibold text-text">Student Name</th>
-                                    <th class="p-4 font-semibold text-text">Date Joined</th>
-                                    <th class="p-4 font-semibold text-text">Points</th>
-                                    <th class="p-4 font-semibold text-text">Actions</th>
+                    <div class="overflow-x-auto mt-8 max-h-[800px]">
+                        <table class=" w-full table table-pin-rows table-pin-cols table-lg">
+                            <thead class="">
+                                <tr class="text-left" ">
+                                    <th class="p-4 py-5 font-semibold text-text text-xxs bg-blue-100 ">Number</th>
+                                    <th class="p-4 py-5 font-semibold text-text text-xxs bg-blue-100">Student Name</th>
+                                    <th class="p-4 py-5 font-semibold text-text text-xxs bg-blue-100">Date Joined</th>
+                                    <th class="p-4 py-5 font-semibold text-text text-xxs bg-blue-100">Points</th>
+                                    <th class="p-4 py-5 font-semibold text-text text-xxs bg-blue-100 ">Actions</th>
                                 </tr>
                             </thead>
                             <tbody> {{-- ? Tabel Data --}}
-                                <tr class="border-b">
+                                <tr class="border-b border-t-0">
                                     <td class="p-4 text-text">1</td>
                                     <td class="p-4 text-text">Alice Smith</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
+                                    <td class="p-4 text-text">2022-10-16</td>
+                                    <td class="p-4 text-text">100</td>
+                                    <td class="p-4 flex space-x-2">
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-eye text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center">
+                                            <div class="solar-edit text-xl"></div>
+                                        </button>
+                                        <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                            <div class="solar-delete text-xl"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-4 text-text">2</td>
+                                    <td class="p-4 text-text">Dione Stark</td>
                                     <td class="p-4 text-text">2022-10-16</td>
                                     <td class="p-4 text-text">100</td>
                                     <td class="p-4 flex space-x-2">
