@@ -7,7 +7,10 @@
             {{-- ? Page Content --}}
             <div class="w-full px-8 py-4">
                 <div class="bg-white rounded-sm p-8">
-                    <p class="text-2xl font-bold text-text">Edit Attendance</p>
+                    <div class="flex items-center gap-4">
+                        <a href="/dashboard" class="text-primary p-0 m-0 solar-close  text-2xl"></a>
+                        <p class="text-2xl font-bold text-text">Edit Attendance</p>
+                    </div>
                     <div class="flex justify-between mt-8">
                         <div class="space-x-6 flex justify-center items-center">
                             <p class="text-xl text-text font-semibold">Friday, 16 December 2024</p>

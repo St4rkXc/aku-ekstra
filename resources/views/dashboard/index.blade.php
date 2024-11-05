@@ -36,9 +36,8 @@
                                     <p class="text-xs text-text/50 font-semibold">Unknown</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col md:flex-row gap-3">
-                                <button class="mybutton-secondary rounded-dmd">View Attendance</button>
-                                <button class="mybutton-primary rounded-dmd flex justify-center gap-2"><span class="ic-plus text-xl"></span>Add Attendance</button>
+                            <div class="">
+                                <a href="/attendance" class="mybutton-primary rounded-dmd flex justify-center gap-2"><span class="ic-plus text-xl"></span>Add Attendance</a>
                             </div>
                         </div>
                     </div>
