@@ -50,6 +50,7 @@ export default {
                 'large': '64px',
                 'dsm' : '6px',
                 'dmd' : '8px',
+                'dlg' : '12px',
             },
             
         },

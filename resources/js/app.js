@@ -10,7 +10,6 @@ function ChangeColor() {
                 text.classList.remove("text-white");
                 text.classList.add("text-text");
             });
-
             if (peer.checked) {
                 texts[index].classList.remove("text-text");
                 texts[index].classList.add("text-white");
@@ -23,6 +22,25 @@ document.addEventListener("DOMContentLoaded", function () {
     ChangeColor();
 });
 
+// * Modal close
+document.getElementById('addstudentclose').addEventListener('click', function(){
+    document.getElementById('addstudentform').reset();
+})
+
+document.getElementById('editstudentclose').addEventListener('click', function(){
+    document.getElementById('editstudentform').reset();
+})
+
+document.getElementById('addclassroomclose').addEventListener('click', function(){
+    document.getElementById('addclassroomform').reset();
+})
+
+document.getElementById('editclassroomclose').addEventListener('click', function(){
+    document.getElementById('editclassroomform').reset();
+})
+
+
+// ! Swiper
 let swiperCards = new Swiper(".swiper", {
     loop: true,
     spaceBetween: 12,

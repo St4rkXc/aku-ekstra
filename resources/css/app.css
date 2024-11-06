@@ -37,7 +37,7 @@
         @apply py-4 px-6 bg-primary rounded-[8px] text-white font-bold duration-200 text-xs
     }
     .modal-input{
-        @apply py-3 px-4 rounded-[6px] border border-black/20 focus:outline-none bg-transparent text-text font-semibold
+        @apply py-3 px-4 rounded-dlg border border-black/20 focus:outline-none bg-transparent text-text font-semibold
     }
 
 }
@@ -50,4 +50,18 @@
 
 .swiper-scrollbar-drag {
     background: #2A5EDC !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffffff; /* Set to white */
+    color: black; /* Set button color */
+    width: 1em;
+    height: 1em;
 }
