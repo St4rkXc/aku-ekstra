@@ -50,21 +50,21 @@
                                 <option value="week">This Week</option>
                             </select>
                         </div>
-                        <div class="mt-4">
-                            <canvas id="attendanceChart" class="h-[320px]"></canvas>
+                        <div class="mt-4 h-[450px] 2xl:h-[320px]">
+                            <canvas id="attendanceChart" class=" h-full "></canvas>
                         </div>
                     </div>
                 </div>
                 <div class="mt-7 p-8 bg-white rounded-sm max-h-[1000px] ">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
+                    <div class="flex flex-col xl:flex-row justify-between gap-4">
                         <div class="flex gap-2 ">
-                            <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-full md:w-96 py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name">
-                            <button class="flex justify-center items-center mybutton-primary p-4 rounded-dmd"> <span class="solar-search text-base"></span> </button>
+                            <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-full xl:w-96 py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name">
+                            <button class="flex justify-center items-center mybutton-primary p-4 rounded-dmd"> Clear </button>
                         </div>
                         <button class="mybutton-primary rounded-dmd flex justify-center items-center gap-3"onclick="student_add.showModal()"><span class="ic-plus text-base"></span> Add Student</button>
                     </div>
                     <div class="overflow-x-auto mt-8 max-h-[800px]">
-                        <table class=" w-full table table-pin-rows table-pin-cols table-lg">
+                        <table class=" w-full table table-pin-rows table-pin-cols table-xs lg:table-lg">
                             <thead class="">
                                 <tr class="text-left" ">
                                     <th class="p-4 py-5 font-semibold text-text text-xxs bg-blue-100 ">Number</th>

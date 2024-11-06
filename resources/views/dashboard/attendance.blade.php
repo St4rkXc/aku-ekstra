@@ -14,7 +14,7 @@
                     <div class="flex justify-between mt-8">
                         <div class="space-x-6 flex justify-center items-center">
                             <p class="text-xl text-text font-semibold">Friday, 16 December 2024</p>
-                            <div class="mybutton-secondary rounded-dmd font-bold text-xs flex justify-center items-center gap-2 p-3 px-4"><span class="solar-calendar text-2xl text-primary"></span>Change Date</div>
+                            <button class="mybutton-secondary rounded-dmd font-bold text-xs flex justify-center items-center gap-2 p-3 px-4 group"><span class="solar-calendar text-2xl text-primary group-active:text-white duration-200 "></span>Change Date</button>
                         </div>
                         <div>
                             <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-full md:w-96 h-full py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name">
@@ -38,9 +38,9 @@
                                         <td class="p-4 text-text">1</td>
                                         <td class="p-4 text-text">Alexandra Delacruz</td>
                                         <td class="p-4 text-text">Present</td>
-                                        <td class=""><input type="checkbox"  class="checkbox rounded-dsm checkbox-primary text-white " /></td>
-                                        <td class=""><input type="checkbox"  class="checkbox rounded-dsm checkbox-warning text-white " /></td>
-                                        <td class=""><input type="checkbox"  class="checkbox rounded-dsm checkbox-error text-white " /></td>
+                                        <td class=""><input type="radio" name="my-1"  class="checkbox rounded-dsm checkbox-primary text-white "  /></td>
+                                        <td class=""><input type="radio" name="my-1" class="checkbox rounded-dsm checkbox-warning text-white " /></td>
+                                        <td class=""><input type="radio" name="my-1" class="checkbox rounded-dsm checkbox-error text-white " /></td>
                                     </tr>
                                 </tbody>
                             </table>
