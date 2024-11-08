@@ -68,7 +68,7 @@
             <h3 class="text-base font-bold text-center">Add Classroom</h3>
             <form action="" class="mt-4" id="addclassroomform">
                 <input type="text" class="w-full modal-input" placeholder="Enter Classroom Name" required> {{-- Add Classroom input --}}
-                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Classroom</button>
+                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Add Classroom</button> {{-- Add Classroom Button --}}
             </form>
             {{-- ? Modal Close button --}}
             <form method="dialog">
@@ -82,7 +82,7 @@
             <h3 class="text-base font-bold text-center">Edit Classroom Name</h3>
             <form action="" class="mt-4" id="editclassroomform">
                 <input type="text" class="w-full modal-input" placeholder="Enter New Classroom Name" required> {{-- Change Classroom name input --}}
-                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Rename Classroom</button>
+                <button class="mybutton-primary w-full mt-4 rounded-[6px]">Rename Classroom</button> {{-- Rename Button --}}
             </form>
             {{-- ? Modal Close button --}}
             <form method="dialog" >
@@ -98,15 +98,14 @@
                 <p class="text-xxs text-text/60 font-bold mb-1">Name</p>
                 <input type="text" class="w-full modal-input mb-4" placeholder="Student Name" required> {{-- Student Name input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Student Id Number</p>
-                <input type="number" class="w-full modal-input mb-4" placeholder="Student id Number" required> {{-- Student Name input --}}
+                <input type="number" class="w-full modal-input mb-4" placeholder="Student id Number" required> {{-- Student ID input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Phone Number</p>
-                <input type="number" class="w-full modal-input mb-4" placeholder="Phone Number" required> {{-- Student Name input --}}
+                <input type="number" class="w-full modal-input mb-4" placeholder="Phone Number" required> {{-- Student Phone input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Date Joined</p>
-                <input type="date" class="w-full modal-input mb-4" placeholder="Date Joined" required> {{-- Student Name input --}}
+                <input type="date" class="w-full modal-input mb-4" placeholder="Date Joined" required> {{-- Student Date input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Points</p>
-                <input type="number" class="w-full modal-input mb-4" placeholder="Points" required> {{-- Student Name input --}}
-                <button class="mybutton-primary w-full mt-4 rounded-[6px]" type="submit">Add Student</button>
-                {{-- <button class="mybutton-secondary w-full mt-4 rounded-[6px]" type="reset">Add Student</button> --}}
+                <input type="number" class="w-full modal-input mb-4" placeholder="Points" required> {{-- Student Points input --}}
+                <button class="mybutton-primary w-full mt-4 rounded-[6px]" type="submit">Add Student</button> {{-- Add Student Button --}}
             </form>
             {{-- ? Modal Close button --}}
             <form method="dialog" >
@@ -122,20 +121,41 @@
                 <p class="text-xxs text-text/60 font-bold mb-1">Name</p>
                 <input type="text" class="w-full modal-input mb-4" placeholder="Student Name" > {{-- Student Name input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Student Id Number</p>
-                <input type="number" class="w-full modal-input mb-4" placeholder="Student id Number" > {{-- Student Name input --}}
+                <input type="number" class="w-full modal-input mb-4" placeholder="Student id Number" > {{-- Student ID input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Phone Number</p>
-                <input type="number" class="w-full modal-input mb-4" placeholder="Phone Number" > {{-- Student Name input --}}
+                <input type="number" class="w-full modal-input mb-4" placeholder="Phone Number" > {{-- Student Phone input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Date Joined</p>
-                <input type="date" class="w-full modal-input mb-4" placeholder="Date Joined" > {{-- Student Name input --}}
+                <input type="date" class="w-full modal-input mb-4" placeholder="Date Joined" > {{-- Student Date input --}}
                 <p class="text-xxs text-text/60 font-bold mb-1">Points</p>
-                <input type="number" class="w-full modal-input mb-4" placeholder="Points" > {{-- Student Name input --}}
-                <button class="mybutton-primary w-full mt-4 rounded-[6px]" type="submit">Add Student</button>
-                {{-- <button class="mybutton-secondary w-full mt-4 rounded-[6px]" type="reset">Add Student</button> --}}
+                <input type="number" class="w-full modal-input mb-4" placeholder="Points" > {{-- Student Points input --}}
+                <button class="mybutton-primary w-full mt-4 rounded-[6px]" type="submit">Edit Student</button> {{-- Edit Confirmation Button --}}
             </form>
             {{-- ? Modal Close button --}}
             <form method="dialog" >
                 <button class="mybutton-secondary rounded-[6px] w-full mt-2" id="editstudentclose" ">Cancel</button>
             </form>
+        </div>
+    </dialog>
+    {{-- * Modal Delete Studnet --}}
+    <dialog id="student_delete" class="modal">
+        <div class="modal-box">
+            <div class="flex gap-5 items-center">
+                <div class="p-4 rounded-sm bg-red-100 text-red-500 flex justify-center items-center">
+                    <div class="solar-delete text-[40px]"></div>
+                </div>
+                <div class="flex flex-col ">
+                    <p class="text-base text-text font-semibold">Delete Student</p>
+                    <p class="text-xs text-text/70 font-normal">Are you sure want to delete <Span>Alice Smith</Span>?</p> {{-- Sesuaiin sama student namenya --}}
+                </div>
+            </div>
+            <div class="flex gap-2 mt-5 w-full"">
+                <form action="" class="flex-1">
+                    <button class="mybutton-secondary bg-red-200 text-red-500 w-full rounded-dsm">Delete</button> {{-- Delete acction button --}}
+                </form>
+                <form method="dialog" class="flex-1" >
+                    <button class="mybutton-secondary rounded-dsm w-full ">Cancel</button>  {{-- ? Modal Close button --}}
+                </form>
+            </div>
         </div>
     </dialog>
     

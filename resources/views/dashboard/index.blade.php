@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="">
-                        <a href="/attendance" class="mybutton-primary rounded-dmd flex justify-center gap-2"><span class="ic-plus text-xl"></span>Add Attendance</a>
+                        <a href="/attendance" class="mybutton-primary rounded-dmd flex justify-center gap-2"><span class="ic-plus text-xl"></span>Add Attendance</a> {{-- Add Attendacne button --}}
                     </div>
                 </div>
             </div>
@@ -54,10 +54,10 @@
         <div class="mt-7 p-8 bg-white rounded-sm max-h-[1000px] ">
             <div class="flex flex-col xl:flex-row justify-between gap-4">
                 <div class="flex gap-2 ">
-                    <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-full xl:w-96 py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name">
-                    <button class="flex justify-center items-center mybutton-primary p-4 rounded-dmd"> Clear </button>
+                    <input type="text" class="bg-[#F1F1F5] rounded-[12px] w-full xl:w-96 py-3 px-4 placeholder:text-xxs font-medium focus:outline-none" placeholder="Search Name"> {{-- Search Bar --}}
+                    <button class="flex justify-center items-center mybutton-primary p-4 rounded-dmd"> Clear </button> {{-- Clear search button --}}
                 </div>
-                <button class="mybutton-primary rounded-dmd flex justify-center items-center gap-3"onclick="student_add.showModal()"><span class="ic-plus text-base"></span> Add Student</button>
+                <button class="mybutton-primary rounded-dmd flex justify-center items-center gap-3"onclick="student_add.showModal()"><span class="ic-plus text-base"></span> Add Student</button> {{-- Add Stundent Button --}}
             </div>
             <div class="overflow-x-auto mt-8 max-h-[800px]">
                 <table class=" w-full table table-pin-rows table-pin-cols table-xs lg:table-lg">
@@ -83,7 +83,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"" >
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -100,7 +100,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -117,7 +117,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -134,7 +134,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -151,7 +151,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -168,7 +168,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -185,7 +185,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -202,7 +202,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -219,7 +219,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -236,7 +236,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -253,7 +253,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>
@@ -270,7 +270,7 @@
                                 <button class="p-2 rounded bg-blue-100 text-blue-600 hover:bg-blue-200 flex justify-center items-center" onclick="student_edit.showModal()"">
                                     <div class="solar-edit text-xl"></div>
                                 </button>
-                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center">
+                                <button class="p-2 rounded bg-red-100 text-red-600 hover:bg-red-200 flex justify-center items-center" onclick="student_delete.showModal()"">
                                     <div class="solar-delete text-xl"></div>
                                 </button>
                             </td>

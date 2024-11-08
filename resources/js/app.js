@@ -87,6 +87,8 @@ document
         document.getElementById("editclassroomform").reset();
     });
 
+
+// ! Chart JS
 document.addEventListener("DOMContentLoaded", () => {
     const ctx = document.getElementById("attendanceChart").getContext("2d");
     const monthData = {
