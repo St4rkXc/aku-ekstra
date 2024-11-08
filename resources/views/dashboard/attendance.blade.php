@@ -38,9 +38,21 @@
                                         <td class="p-4 text-text">1</td>
                                         <td class="p-4 text-text">Alexandra Delacruz</td>
                                         <td class="p-4 text-text">Present</td>
-                                        <td class=""><input type="radio" name="my-1"  class="checkbox rounded-dsm checkbox-primary text-white "  /></td>
-                                        <td class=""><input type="radio" name="my-1" class="checkbox rounded-dsm checkbox-warning text-white " /></td>
-                                        <td class=""><input type="radio" name="my-1" class="checkbox rounded-dsm checkbox-error text-white " /></td>
+                                        <form action="">
+                                            <td class=""><input type="radio"  value="present"  name="data-1" class="checkbox rounded-dsm checkbox-primary text-white "  /></td>
+                                            <td class=""><input type="radio" value="leave" name="data-1"  class="checkbox rounded-dsm checkbox-warning text-white " /></td>
+                                            <td class=""><input type="radio" value="unknown"  name="data-1"  class="checkbox rounded-dsm checkbox-error text-white " /></td>
+                                        </form>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 text-text">1</td>
+                                        <td class="p-4 text-text">Alexandra Delacruz</td>
+                                        <td class="p-4 text-text">Present</td>
+                                        <form action="">
+                                            <td class=""><input type="radio"  value="present"  name="data-1" class="checkbox rounded-dsm checkbox-primary text-white "  /></td>
+                                            <td class=""><input type="radio" value="leave" name="data-1"  class="checkbox rounded-dsm checkbox-warning text-white " /></td>
+                                            <td class=""><input type="radio" value="unknown"  name="data-1"  class="checkbox rounded-dsm checkbox-error text-white " /></td>
+                                        </form>
                                     </tr>
                                 </tbody>
                             </table>
@@ -49,7 +61,6 @@
                 </div>
             </div>
         </div>
-        
         {{-- ? Drawer --}} 
         <div class="drawer-side">
             <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>

@@ -22,22 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ChangeColor();
 });
 
-// * Modal close
-document.getElementById('addstudentclose').addEventListener('click', function(){
-    document.getElementById('addstudentform').reset();
-})
 
-document.getElementById('editstudentclose').addEventListener('click', function(){
-    document.getElementById('editstudentform').reset();
-})
-
-document.getElementById('addclassroomclose').addEventListener('click', function(){
-    document.getElementById('addclassroomform').reset();
-})
-
-document.getElementById('editclassroomclose').addEventListener('click', function(){
-    document.getElementById('editclassroomform').reset();
-})
 
 
 // ! Swiper
@@ -79,4 +64,21 @@ let swiperCards = new Swiper(".swiper", {
         },
     },
 });
+
+// * Modal close
+document.getElementById('addstudentclose').addEventListener('click', function(){
+    document.getElementById('addstudentform').reset();
+})
+
+document.getElementById('editstudentclose').addEventListener('click', function(){
+    document.getElementById('editstudentform').reset();
+})
+
+document.getElementById('addclassroomclose').addEventListener('click', function(){
+    document.getElementById('addclassroomform').reset();
+})
+
+document.getElementById('editclassroomclose').addEventListener('click', function(){
+    document.getElementById('editclassroomform').reset();
+})
 
