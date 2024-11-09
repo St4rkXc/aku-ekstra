@@ -158,6 +158,72 @@
             </div>
         </div>
     </dialog>
+    {{-- * Modal Attedance Date--}}
+    <dialog id="attendance_date" class="modal">
+        <div class="modal-box">
+            <h3 class="text-base font-bold text-center">Select date</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-6">
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Thu, December 15</p>
+                </div>
+                <div class="attendance-date group bg-primary text-white">
+                    <p class="text-xs font-semibold">Fri, December 16</p>
+                </div>
+                <a class="attendance-date group hover:bg-primary duration-300 border-primary border-2" href="/saturday-attendance">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Sat, December 17</p>
+                </a>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Sun, December 18</p>
+                </div>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Mon, December 19</p>
+                </div>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Tue, December 20</p>
+                </div>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Wed, December 21</p>
+                </div>
+                
+            </div>
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+        </div>
+    </dialog>
+    {{-- * Modal Attedance2 Date--}}
+    <dialog id="attendance2_date" class="modal">
+        <div class="modal-box">
+            <h3 class="text-base font-bold text-center">Select date</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-6">
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Thu, December 15</p>
+                </div>
+                <a class="attendance-date group hover:bg-primary duration-300 border-primary border-2" href="/friday-attendance" >
+                    <p class="text-xs font-semibold group-hover:text-white text-text">Fri, December 16</p>
+                </a>
+                <a class="attendance-date group bg-primary ">
+                    <p class="text-xs font-semibold text-white">Sat, December 17</p>
+                </a>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Sun, December 18</p>
+                </div>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Mon, December 19</p>
+                </div>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Tue, December 20</p>
+                </div>
+                <div class="attendance-date group hover:bg-primary duration-300">
+                    <p class="text-xs font-semibold text-text group-hover:text-white">Wed, December 21</p>
+                </div>
+                
+            </div>
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+        </div>
+    </dialog>
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

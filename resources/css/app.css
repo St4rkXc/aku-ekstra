@@ -39,6 +39,9 @@
     .modal-input{
         @apply py-3 px-4 rounded-dlg border border-black/20 focus:outline-none bg-transparent text-text font-semibold
     }
+    .attendance-date{
+        @apply h-[80px] w-full flex items-center justify-center p-4 border border-black/20 rounded-dlg cursor-pointer
+    }
 
 }
 .swiper-scrollbar {

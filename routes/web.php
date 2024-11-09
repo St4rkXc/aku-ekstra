@@ -8,6 +8,9 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.index');
 });
-Route::get('/attendance', function () {
+Route::get('/friday-attendance', function () {
     return view('dashboard.attendance');
+});
+Route::get('/saturday-attendance', function () {
+    return view('dashboard.sat-attendance');
 });
