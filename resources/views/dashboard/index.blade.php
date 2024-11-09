@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="">
-                        <a href="/attendance" class="mybutton-primary rounded-dmd flex justify-center gap-2"><span class="ic-plus text-xl"></span>Add Attendance</a> {{-- Add Attendacne button --}}
+                        <a href="/friday-attendance" class="mybutton-primary rounded-dmd flex justify-center gap-2"><span class="ic-plus text-xl"></span>Add Attendance</a> {{-- Add Attendacne button --}}
                     </div>
                 </div>
             </div>

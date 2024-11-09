@@ -9,7 +9,7 @@ Route::get('/dashboard', function () {
     return view('dashboard.index');
 });
 Route::get('/friday-attendance', function () {
-    return view('dashboard.attendance');
+    return view('dashboard.fri-attendance');
 });
 Route::get('/saturday-attendance', function () {
     return view('dashboard.sat-attendance');
