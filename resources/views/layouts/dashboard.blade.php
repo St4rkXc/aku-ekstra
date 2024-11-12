@@ -32,7 +32,7 @@
         {{-- ? Drawer --}} 
         <div class="drawer-side">
             <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-            <div class="menu bg-white min-h-full w-[350px] p-8">
+            <div class="menu bg-white min-h-screen w-[350px] p-8">
                 <div class="flex gap-4 items-center">
                     <img src="{{ asset('Images/logo.png') }}" class="h-10 w-10" alt="">
                     <p class="text-text text-2xl font-bold">Gastix</p>
