@@ -2,7 +2,7 @@
 @section('content')
     {{-- Code starts here --}}
     <x-navbar></x-navbar>
-    <header class="w-screen h-screen pt-28 pb-4 px-0  md:px-4">
+    <header class="w-screen h-screen pt-4 pb-4 px-0  md:px-4">
         <div
             class="w-full h-full rounded-none  md:rounded-lg flex flex-col justify-center items-center space-y-4 mx-auto "style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('Images/Hero.png') }}) center center / cover no-repeat;">
             <p class="text-3xl  md:text-5xl text-white font-bold w-full md:w-3/4 text-center mx-auto">Manage Extraculicular With Gastix </p>

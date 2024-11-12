@@ -1,6 +1,6 @@
 <div>
     <!-- The biggest battle is the war against ignorance. - Mustafa Kemal Atatürk -->
-    <nav class="fixed w-screen z-40 px-2 lg:px-4 mt-4">
+    <nav class=" w-screen z-40 px-2 lg:px-4 mt-4">
 		<div class="navbar bg-transparent  mx-auto w-full border bg-white border-black/15 rounded-md lg:px-8 px-4 py-4">
 			<div class="navbar-start flex items-center space-x-4">
 				<div class="flex items-center ">
