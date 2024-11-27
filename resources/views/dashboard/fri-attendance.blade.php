@@ -43,7 +43,6 @@
                                 </form>
                             </tr>
                             <tr>
-                                <td class="p-4 text-text">1</td>
                                 <td class="p-4 text-text">Alexandra Delacruz</td>
                                 <td class="p-4 text-text">Present</td>
                                 <form action="">
